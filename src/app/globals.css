@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom-radial-gradient {
+  background: radial-gradient(closest-side, #000 80%, #2b1942);
+}
