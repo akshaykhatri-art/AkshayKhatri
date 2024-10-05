@@ -71,7 +71,7 @@ const Portfolio = () => {
                 <p className="text-xl text-orange-400 font-semibold">
                   {project.devStack}
                 </p>
-                <div className="w-64 h-[1px] bg-gray-400 my-4">
+                <div className="w-64 border-t border-gray-400 my-4">
                   <a href={project.link} className="mr-6">
                     Link
                   </a>
