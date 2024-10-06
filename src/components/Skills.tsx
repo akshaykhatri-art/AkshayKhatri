@@ -1,11 +1,19 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
+import { SiMongodb } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const skillIcons = [
   { icon: <FaHtml5 size={140} />, label: "HTML" },
   { icon: <FaCss3Alt size={140} />, label: "CSS" },
   { icon: <FaReact size={140} />, label: "React" },
   { icon: <FaJsSquare size={140} />, label: "JavaScript" },
+  { icon: <DiMysql size={140} />, label: "MySQL" },
+  { icon: <SiMongodb size={140} />, label: "MongoDB" },
+  { icon: <RiNextjsFill size={140} />, label: "NextJs" },
+  { icon: <RiTailwindCssFill size={140} />, label: "Tailwind" },
 ];
 
 const Skills = () => {

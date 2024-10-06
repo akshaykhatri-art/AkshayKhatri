@@ -2,9 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import proj2 from "../assets/proj2.jpg";
-import proj3 from "../assets/proj3.png";
-import proj4 from "../assets/proj4.jpg";
 import jobNest from "../assets/JobNest.png";
 import smartCityRating from "../assets/SmartCityRating.png";
 
@@ -25,14 +22,6 @@ const projects = [
     git: "https://github.com/akshaykhatri-art/smart-city-rating",
     src: smartCityRating,
   },
-  //   {
-  //     title: "Project 333",
-  //     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur a, neque soluta fugiat, adipisci voluptatem accusamus quibusdam pariatur facilis, labore sunt earum odio hic dignissimos fugit rerum alias dolore at!",
-  //     devStack: "MongoDB, Express, React, Node.js",
-  //     link: "#",
-  //     git: "#",
-  //     src: proj4,
-  //   },
 ];
 
 const Portfolio = () => {
@@ -45,7 +34,7 @@ const Portfolio = () => {
         Selected <span className="text-orange-400">Projects</span>
       </h1>
 
-      <div className="max-w-[1000px] mx-auto mt-40 space-y-24">
+      <div className="px-6 md:px-0 max-w-[1000px] mx-auto mt-40 space-y-24">
         {projects.map((project, index) => {
           return (
             <motion.div
@@ -54,10 +43,8 @@ const Portfolio = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className={`mt-12 flex ${
-                index % 2 === 1
-                  ? "flex-col-reverse md:flex-row-reverse gap-12"
-                  : "flex-col md:flex-row"
+              className={`mt-12 flex flex-col ${
+                index % 2 === 1 ? "md:flex-row-reverse gap-12" : "md:flex-row"
               }`}
             >
               <div className="space-y-2 max-w-[550px]">

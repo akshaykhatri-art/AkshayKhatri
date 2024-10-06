@@ -5,6 +5,7 @@ import lightning from "../assets/icon2.png";
 import { motion } from "framer-motion";
 import profilepic from "../assets/profilepic.png";
 import AkshayAvatar from "../assets/AkshayAvatar.png";
+import AkshayAvatarNew from "../assets/AkshayAvatarNew.png";
 import React from "react";
 
 const Hero = () => {
@@ -17,7 +18,10 @@ const Hero = () => {
           <h1 className="text-[#98B4CE]">Hi, I am</h1>
           <h1 className="text-[#E48A57]">Akshay Khatri</h1>
         </div>
-        <motion.div className="absolute left-[200px] top-[170px]" drag>
+        <motion.div
+          className="hidden md:block absolute left-[200px] top-[170px]"
+          drag
+        >
           <Image
             src={cursor}
             height="170"
@@ -27,7 +31,10 @@ const Hero = () => {
             draggable="false"
           />
         </motion.div>
-        <motion.div className="absolute right-[220px] top-[20px]" drag>
+        <motion.div
+          className="hidden md:block absolute right-[220px] top-[20px]"
+          drag
+        >
           <Image
             src={lightning}
             height="120"
@@ -44,7 +51,7 @@ const Hero = () => {
         </p>
         <Image
           // src={profilepic}
-          src={AkshayAvatar}
+          src={AkshayAvatarNew}
           alt="profile picture"
           className="h-auto w-auto mx-auto"
         />
